@@ -1,0 +1,185 @@
+@font-face {
+    font-family: Notosans;
+    src: url(fonts/NotoSans-Italic-VariableFont_wdth\,wght.ttf);
+}
+@font-face {
+    font-family: Notosanss;
+    src: url(fonts/NotoSans-VariableFont_wdth\,wght.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Notosanss, Notosans, sans-serif;
+}
+
+/* container */
+
+.container{
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,3,0.1), rgba(4,9,3,0.5)), url("pexels-nita-9825-54300.jpg");
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+/* ------------------- */
+/* ---------------- Navbar ------------------ */
+.navdiv{
+    height: 50px;
+    width: auto;
+    background: transparent;
+    backdrop-filter: blur(15px);
+    position: sticky;
+    top: 0;
+}
+.nav{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#svg{
+    fill: rgb(255, 255, 255);
+    margin-left: 20px;
+}
+svg{
+    height: 40px;
+}
+.h1logo{
+    margin-bottom: 50px;
+}
+
+.ul{
+    display: flex;
+    margin-right: 20px;
+}
+.ul li{
+    margin: 0 10px;
+    list-style: none;
+}
+.ul a{
+    text-decoration: none;
+    color: hsl(0, 0%, 99%);
+}
+.ul a::after{
+    content: '';
+    display: block;
+    margin: auto;
+    height: 2px;
+    width: 0%;
+    transition: 1.5s;
+}
+.ul a:hover::after{
+    background: rgb(255, 255, 255);
+    width: 60%;
+}
+/* --------------------------------------- */
+/* main style */
+
+.maindiv{
+    height: 90%;
+    /* transform: translateY(20%); */
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 390px;
+    height: 400px;
+    color: white;
+    background: transparent;
+    backdrop-filter: blur(5px);
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(255, 251, 251, 0.815);
+}
+.main .logo{
+    text-align: center;
+}
+.main .inputbox{
+    position: relative;
+    height: 50px;
+    width: 300px;
+    margin: 10px 0;
+}
+.main .inputbox input{
+    border-radius: 25px;
+    outline: none;
+    border-style: none;
+    padding: 10px;
+    height: 100%;
+    width: 100%;
+}
+.inputbox i {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 15px;
+  color: black;
+}
+.main .forget{
+    display: flex;
+    justify-content: space-between;
+    font-size: 14.5px;
+  }
+  
+.main label input{
+    color: #fff;
+    margin-right: 3px;
+  }
+  
+.main .forget a{
+    text-decoration: none;
+    color: rgb(252, 255, 255);
+}
+  
+.main .forget a:hover{
+    text-decoration: underline;
+  }
+  
+.main .btn{
+    width: 100%;
+    height: 45px;
+    border: none;
+    border-radius: 40px;
+    outline: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 700;
+    color: #000;
+    margin-top: 10px;
+  }
+  .main .btn:hover{
+    background-color: hsl(0, 0%, 90%);
+    color: hwb(0 2% 90%);
+  }
+
+.main .reginstration{
+    font-size: 14.5px;
+    text-align: center;
+    margin: 20px 0 15px;
+  }
+  
+.reginstration p a{
+    font-weight: 400;
+    color: rgb(255, 255, 255);
+  }
+/*  */
+.footer{
+    position: relative;
+    top: -10px;
+}
+.ft{
+    color: whitesmoke;
+    text-align: center;
+}
+hr{
+    width: 1px solid white;
+}
